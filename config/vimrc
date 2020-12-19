@@ -42,6 +42,12 @@ if has('vim_starting')
 	let g:mapleader="\<Space>"
 	let g:maplocalleader=';'
 
+	" Remap <ESC> by using 'jk'
+	imap jk <esc>
+
+	" Remap <C-\><C-N> by using 'jk' in terminal
+	tmap jk <C-\><C-N>
+
 	" Release keymappings prefixes, evict entirely for use of plug-ins.
 	nnoremap <Space>  <Nop>
 	xnoremap <Space>  <Nop>
