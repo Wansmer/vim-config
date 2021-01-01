@@ -90,7 +90,7 @@ function! s:defx_mappings() abort
 	setlocal signcolumn=no expandtab
 	setlocal cursorline
 
-	nnoremap <silent><buffer><expr> <CR>  <SID>defx_toggle_tree()
+	nnoremap <silent><buffer><expr> <CR>  defx#do_action('multi', ['drop', 'change_vim_cwd'])
 	nnoremap <silent><buffer><expr> e     <SID>defx_toggle_tree()
 	nnoremap <silent><buffer><expr> l     <SID>defx_toggle_tree()
 	nnoremap <silent><buffer><expr> h     defx#do_action('cd', ['..'])
